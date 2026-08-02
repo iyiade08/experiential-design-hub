@@ -33,24 +33,27 @@ export function Process() {
           <div className="space-y-16 md:space-y-24">
             {processSteps.map((s, i) => (
               <Reveal key={s.n} y={40}>
-                <div
-                  className={`relative md:grid md:grid-cols-2 md:gap-16 ${
-                    i % 2 ? "md:[&>*:first-child]:col-start-2" : ""
-                  }`}
-                >
-                  <span className="absolute top-2 -left-8 h-2 w-2 -translate-x-[3px] rounded-full bg-gold md:left-1/2" />
-                  <div className={i % 2 ? "" : "md:text-right"}>
+                <div className="relative md:grid md:grid-cols-2 md:gap-16">
+                  <span className="absolute top-2 -left-8 h-2 w-2 -translate-x-[3px] rounded-full bg-gold md:left-1/2 md:-translate-x-1/2" />
+                  <div
+                    className={
+                      i % 2
+                        ? "md:col-start-2 md:pl-4"
+                        : "md:col-start-1 md:flex md:flex-col md:items-end md:pr-4 md:text-right"
+                    }
+                  >
                     <span className="font-display text-5xl font-light text-foreground/15">
                       {s.n}
                     </span>
                     <h3 className="mt-2 font-display text-2xl font-light md:text-3xl">
                       {s.title}
                     </h3>
-                    <p className="mt-3 max-w-sm text-sm leading-relaxed text-muted-foreground md:inline-block">
+                    <p className="mt-3 max-w-sm text-sm leading-relaxed text-muted-foreground">
                       {s.body}
                     </p>
                   </div>
                 </div>
+
               </Reveal>
             ))}
           </div>
