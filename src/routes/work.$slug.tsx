@@ -4,10 +4,10 @@ import { ArrowLeft } from "lucide-react";
 import { CustomCursor } from "@/components/site/CustomCursor";
 import { Nav } from "@/components/site/Nav";
 import { Reveal } from "@/components/site/Reveal";
-import { categoryAccent, projects } from "@/lib/portfolio-data";
+import { categoryAccent, projects, type Project } from "@/lib/portfolio-data";
 
 export const Route = createFileRoute("/work/$slug")({
-  loader: ({ params }) => {
+  loader: ({ params }): { project: Project } => {
     const project = projects.find((p) => p.slug === params.slug);
     if (!project) throw notFound();
     return { project };
