@@ -35,7 +35,7 @@ export const Route = createFileRoute("/work/$slug")({
 });
 
 function ProjectPage() {
-  const { project } = Route.useLoaderData();
+  const { project } = Route.useLoaderData() as { project: Project };
   const accent = categoryAccent[project.category];
   const related = projects.filter((p) => p.slug !== project.slug).slice(0, 2);
 
