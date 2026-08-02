@@ -81,7 +81,7 @@ export function Hero() {
         </motion.p>
 
         <motion.h1
-          className="mt-7 font-display text-[clamp(2.6rem,10vw,9rem)] leading-[0.92] font-light tracking-[0.02em]"
+          className="mt-7 font-display text-[clamp(1.7rem,8vw,9rem)] leading-[0.92] font-light tracking-[0.01em] break-words"
           initial={{ opacity: 0, y: 30, filter: "blur(14px)" }}
           animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
           transition={{ duration: 1.6, delay: 3.5, ease }}
