@@ -5,7 +5,7 @@ import { Reveal, SectionHeading } from "./Reveal";
 
 export function Skills() {
   const [active, setActive] = useState(0);
-  const tool = tools[active];
+  const tool = tools[active] ?? tools[0]!;
 
   return (
     <section className="relative border-t border-border/50 py-28 md:py-40">
