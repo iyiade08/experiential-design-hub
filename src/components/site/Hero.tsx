@@ -32,15 +32,13 @@ export function Hero() {
       <div
         className="animate-breathe pointer-events-none absolute top-[-18%] left-1/2 h-[46rem] w-[46rem] -translate-x-1/2 rounded-full blur-3xl"
         style={{
-          background:
-            "radial-gradient(circle, oklch(0.8 0.11 85 / 0.13), transparent 65%)",
+          background: "radial-gradient(circle, oklch(0.8 0.11 85 / 0.13), transparent 65%)",
         }}
       />
       <div
         className="animate-breathe pointer-events-none absolute right-[-10%] bottom-[-20%] h-[38rem] w-[38rem] rounded-full blur-3xl"
         style={{
-          background:
-            "radial-gradient(circle, oklch(0.36 0.07 258 / 0.35), transparent 68%)",
+          background: "radial-gradient(circle, oklch(0.36 0.07 258 / 0.35), transparent 68%)",
           animationDelay: "3s",
         }}
       />

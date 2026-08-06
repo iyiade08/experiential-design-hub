@@ -39,9 +39,7 @@ export function CustomCursor() {
             height: active ? 52 : 26,
             marginLeft: active ? -26 : -13,
             marginTop: active ? -26 : -13,
-            backgroundColor: active
-              ? "oklch(0.8 0.11 85 / 0.10)"
-              : "oklch(0.8 0.11 85 / 0)",
+            backgroundColor: active ? "oklch(0.8 0.11 85 / 0.10)" : "oklch(0.8 0.11 85 / 0)",
           }}
           transition={{ type: "spring", stiffness: 300, damping: 25 }}
         />

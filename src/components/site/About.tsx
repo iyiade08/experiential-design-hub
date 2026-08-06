@@ -55,16 +55,14 @@ export function About() {
             </h2>
             <div className="mt-7 space-y-5 text-base leading-relaxed text-muted-foreground">
               <p>
-                I'm a motion designer, editor and graphic designer working at the
-                intersection of film and brand. Most of my work lives in the seconds
-                people usually skip — so I spend my time making those seconds worth
-                staying for.
+                I'm a motion designer, editor and graphic designer working at the intersection of
+                film and brand. Most of my work lives in the seconds people usually skip — so I
+                spend my time making those seconds worth staying for.
               </p>
               <p>
-                I work with a small number of clients each year, which means every
-                project gets full attention: the concept, the frame, the timing, the
-                grade and the hand-off. No templates, no filler, no motion for the sake
-                of motion.
+                I work with a small number of clients each year, which means every project gets full
+                attention: the concept, the frame, the timing, the grade and the hand-off. No
+                templates, no filler, no motion for the sake of motion.
               </p>
             </div>
           </Reveal>

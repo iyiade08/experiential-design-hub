@@ -49,9 +49,7 @@ async function main() {
     compressionOptions: { level: 6 },
   });
   await fs.writeFile(outFile, buffer);
-  console.log(
-    `Created ${outFile} (${(buffer.length / 1024 / 1024).toFixed(2)} MB)`,
-  );
+  console.log(`Created ${outFile} (${(buffer.length / 1024 / 1024).toFixed(2)} MB)`);
 }
 
 main().catch((err) => {

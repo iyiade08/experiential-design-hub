@@ -31,8 +31,7 @@ export function DownloadCodebase() {
           <div
             className="pointer-events-none absolute -right-24 -top-24 h-64 w-64 rounded-full blur-3xl"
             style={{
-              background:
-                "radial-gradient(circle, oklch(0.8 0.11 85 / 0.15), transparent 65%)",
+              background: "radial-gradient(circle, oklch(0.8 0.11 85 / 0.15), transparent 65%)",
             }}
           />
 
@@ -41,13 +40,11 @@ export function DownloadCodebase() {
               <Reveal>
                 <p className="eyebrow">Source</p>
                 <h2 className="font-display mt-5 text-[clamp(2rem,5vw,3.5rem)] leading-[1.05] font-light">
-                  Take the codebase{" "}
-                  <span className="text-gold-foil animate-foil">with you.</span>
+                  Take the codebase <span className="text-gold-foil animate-foil">with you.</span>
                 </h2>
                 <p className="mt-5 max-w-xl leading-relaxed text-muted-foreground">
-                  Download the full project source as a ZIP. It includes every
-                  component, route, asset and configuration file used to build
-                  this portfolio.
+                  Download the full project source as a ZIP. It includes every component, route,
+                  asset and configuration file used to build this portfolio.
                 </p>
               </Reveal>
             </div>
@@ -59,11 +56,7 @@ export function DownloadCodebase() {
                   download="EXTACYOFCRYPTO-portfolio.zip"
                   className="group relative inline-flex items-center justify-center gap-3 overflow-hidden border border-gold/50 px-8 py-4 text-[0.68rem] tracking-[0.26em] uppercase transition-colors duration-500 hover:text-primary-foreground"
                 >
-                  <Download
-                    size={16}
-                    strokeWidth={1.5}
-                    className="relative z-10"
-                  />
+                  <Download size={16} strokeWidth={1.5} className="relative z-10" />
                   <span className="relative z-10">Download ZIP</span>
                   <span className="absolute inset-0 -translate-x-full bg-gold transition-transform duration-600 ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:translate-x-0" />
                 </a>
@@ -96,13 +89,9 @@ export function DownloadCodebase() {
                   {instructions.map((step, i) => (
                     <div key={step.title} className="relative">
                       <div className="mb-4 flex h-10 w-10 items-center justify-center rounded-full border border-gold/30 text-gold">
-                        <span className="font-display text-lg font-light">
-                          {i + 1}
-                        </span>
+                        <span className="font-display text-lg font-light">{i + 1}</span>
                       </div>
-                      <h3 className="font-display text-lg font-light">
-                        {step.title}
-                      </h3>
+                      <h3 className="font-display text-lg font-light">{step.title}</h3>
                       <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
                         {step.text}
                       </p>

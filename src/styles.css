@@ -159,12 +159,7 @@
 }
 
 @utility gold-line {
-  background: linear-gradient(
-    90deg,
-    transparent,
-    oklch(0.8 0.11 85 / 0.55),
-    transparent
-  );
+  background: linear-gradient(90deg, transparent, oklch(0.8 0.11 85 / 0.55), transparent);
 }
 
 @utility glass-panel {
