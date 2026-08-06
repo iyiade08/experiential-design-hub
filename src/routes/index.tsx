@@ -9,6 +9,7 @@ import { Process } from "@/components/site/Process";
 import { Skills } from "@/components/site/Skills";
 import { Testimonials } from "@/components/site/Testimonials";
 import { BehindTheScenes } from "@/components/site/BehindTheScenes";
+import { DownloadCodebase } from "@/components/site/DownloadCodebase";
 import { Contact } from "@/components/site/Contact";
 
 const title = "EXTACYOFCRYPTO — Motion Designer, Video Editor & Graphic Designer";
@@ -43,6 +44,7 @@ function Index() {
         <Skills />
         <Testimonials />
         <BehindTheScenes />
+        <DownloadCodebase />
         <Contact />
       </main>
     </>
