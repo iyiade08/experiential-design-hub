@@ -41,8 +41,8 @@ export function Contact() {
                 <span className="text-gold-foil animate-foil">worth watching.</span>
               </h2>
               <p className="mt-7 max-w-md leading-relaxed text-muted-foreground">
-                Taking on a limited number of projects. Tell me about the brand, the
-                deadline and the idea — I'll reply within two working days.
+                Taking on a limited number of projects. Tell me about the brand, the deadline and
+                the idea — I'll reply within two working days.
               </p>
             </Reveal>
 

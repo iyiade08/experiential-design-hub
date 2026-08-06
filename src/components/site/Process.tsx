@@ -45,15 +45,12 @@ export function Process() {
                     <span className="font-display text-5xl font-light text-foreground/15">
                       {s.n}
                     </span>
-                    <h3 className="mt-2 font-display text-2xl font-light md:text-3xl">
-                      {s.title}
-                    </h3>
+                    <h3 className="mt-2 font-display text-2xl font-light md:text-3xl">{s.title}</h3>
                     <p className="mt-3 max-w-sm text-sm leading-relaxed text-muted-foreground">
                       {s.body}
                     </p>
                   </div>
                 </div>
-
               </Reveal>
             ))}
           </div>

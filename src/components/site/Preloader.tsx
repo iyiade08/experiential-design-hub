@@ -32,8 +32,7 @@ export function Preloader({ onDone }: { onDone?: () => void }) {
           <motion.div
             className="pointer-events-none absolute h-[42rem] w-[42rem] rounded-full blur-3xl"
             style={{
-              background:
-                "radial-gradient(circle, oklch(0.8 0.11 85 / 0.16), transparent 65%)",
+              background: "radial-gradient(circle, oklch(0.8 0.11 85 / 0.16), transparent 65%)",
             }}
             initial={{ opacity: 0, scale: 0.7 }}
             animate={{ opacity: 1, scale: 1 }}

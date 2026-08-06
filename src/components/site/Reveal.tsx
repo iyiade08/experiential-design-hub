@@ -40,9 +40,7 @@ export function SectionHeading({
       <h2 className="mt-5 font-display text-[clamp(2.2rem,5vw,3.8rem)] leading-[1.05] font-light">
         {title}
       </h2>
-      {intro && (
-        <p className="mt-5 text-base leading-relaxed text-muted-foreground">{intro}</p>
-      )}
+      {intro && <p className="mt-5 text-base leading-relaxed text-muted-foreground">{intro}</p>}
     </Reveal>
   );
 }

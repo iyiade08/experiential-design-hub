@@ -10,10 +10,7 @@ export function Skills() {
   return (
     <section className="relative border-t border-border/50 py-28 md:py-40">
       <div className="mx-auto max-w-7xl px-6 lg:px-10">
-        <SectionHeading
-          eyebrow="Toolkit"
-          title="The software, and what I actually do with it."
-        />
+        <SectionHeading eyebrow="Toolkit" title="The software, and what I actually do with it." />
 
         <div className="mt-14 grid gap-10 lg:grid-cols-[1fr_1.1fr] lg:gap-20">
           <Reveal>

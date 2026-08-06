@@ -5,11 +5,7 @@ import brandingImg from "@/assets/work-branding.jpg";
 import socialImg from "@/assets/work-social.jpg";
 
 export type Category =
-  | "Motion Design"
-  | "Video Editing"
-  | "Graphic Design"
-  | "Branding"
-  | "Social Media";
+  "Motion Design" | "Video Editing" | "Graphic Design" | "Branding" | "Social Media";
 
 export const categories: Category[] = [
   "Motion Design",
@@ -132,8 +128,7 @@ export const projects: Project[] = [
     role: "Campaign art direction, animation and delivery across formats.",
     outcome: "3.1M organic impressions and a 210% lift in profile visits over six weeks.",
     testimonial: {
-      quote:
-        "Premium and performance usually pull in opposite directions. This campaign did both.",
+      quote: "Premium and performance usually pull in opposite directions. This campaign did both.",
       author: "Noor Haddad",
       role: "Head of Growth, Terra Studio",
     },
@@ -254,8 +249,7 @@ export const testimonials = [
     role: "Founder, Foundry Nine",
   },
   {
-    quote:
-      "The motion signature he built is now the most recognisable part of our brand.",
+    quote: "The motion signature he built is now the most recognisable part of our brand.",
     author: "Lena Ostrom",
     role: "Creative Lead, Obsidian Atelier",
   },
