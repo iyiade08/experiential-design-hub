@@ -1,6 +1,6 @@
 # Luxe Creative Studio
 
-Creative Brief – Portfolio Website for EXTACYOFCRYPTO
+Creative Brief – Portfolio Website for LEDUMBINY
 
 I want a portfolio website that feels like an experience, not a normal website.
 
@@ -10,7 +10,7 @@ The style should be modern, elegant, cinematic, and minimal. Think of the attent
 
 The website should be built around my creative identity:
 
-EXTACYOFCRYPTO
+LEDUMBINY
 
 Motion Designer
 
@@ -30,7 +30,7 @@ Instead, I want a short loading animation.
 
 The background should be almost black.
 
-My name, EXTACYOFCRYPTO, should slowly appear in a metallic or brushed gold finish with soft lighting.
+My name, LEDUMBINY, should slowly appear in a metallic or brushed gold finish with soft lighting.
 
 After a few seconds, the letters should smoothly transform into the homepage.
 
@@ -66,7 +66,7 @@ The homepage should immediately introduce who I am.
 
 Display my name prominently:
 
-EXTACYOFCRYPTO
+LEDUMBINY
 
 Below it:
 

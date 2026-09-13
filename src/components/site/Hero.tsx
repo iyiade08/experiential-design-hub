@@ -32,15 +32,13 @@ export function Hero() {
       <div
         className="animate-breathe pointer-events-none absolute top-[-18%] left-1/2 h-[46rem] w-[46rem] -translate-x-1/2 rounded-full blur-3xl"
         style={{
-          background:
-            "radial-gradient(circle, oklch(0.8 0.11 85 / 0.13), transparent 65%)",
+          background: "radial-gradient(circle, oklch(0.8 0.11 85 / 0.13), transparent 65%)",
         }}
       />
       <div
         className="animate-breathe pointer-events-none absolute right-[-10%] bottom-[-20%] h-[38rem] w-[38rem] rounded-full blur-3xl"
         style={{
-          background:
-            "radial-gradient(circle, oklch(0.36 0.07 258 / 0.35), transparent 68%)",
+          background: "radial-gradient(circle, oklch(0.36 0.07 258 / 0.35), transparent 68%)",
           animationDelay: "3s",
         }}
       />
@@ -86,7 +84,7 @@ export function Hero() {
           animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
           transition={{ duration: 1.6, delay: 3.5, ease }}
         >
-          <span className="text-gold-foil animate-foil">EXTACYOFCRYPTO</span>
+          <span className="text-gold-foil animate-foil">LEDUMBINY</span>
         </motion.h1>
 
         <motion.div
@@ -108,7 +106,12 @@ export function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1.4, delay: 4.2, ease }}
         >
-          I create visuals that capture attention and tell unforgettable stories.
+          I make motion and graphic design for people who need someone who actually understands
+          their space, not just someone who can animate a logo reveal. Most of my work sits at the
+          intersection of web3 and brand storytelling, so I'm not learning your industry on your
+          dime. I write, design, and edit everything myself, across static and motion. You're not
+          managing three freelancers and a slipping timeline you're working with one person, concept
+          to final export.
         </motion.p>
 
         <motion.div

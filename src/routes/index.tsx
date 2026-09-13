@@ -11,7 +11,7 @@ import { Testimonials } from "@/components/site/Testimonials";
 import { BehindTheScenes } from "@/components/site/BehindTheScenes";
 import { Contact } from "@/components/site/Contact";
 
-const title = "EXTACYOFCRYPTO — Motion Designer, Video Editor & Graphic Designer";
+const title = "LEDUMBINY — Motion Designer, Video Editor & Graphic Designer";
 const description =
   "Cinematic motion design, video editing and graphic design portfolio. Visuals that capture attention and tell unforgettable stories.";
 

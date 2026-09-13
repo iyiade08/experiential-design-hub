@@ -6,6 +6,45 @@ import { Nav } from "@/components/site/Nav";
 import { Reveal } from "@/components/site/Reveal";
 import { categoryAccent, projects, type Project } from "@/lib/portfolio-data";
 
+function ProjectMedia({
+  project,
+  variant = "preview",
+}: {
+  project: Project;
+  variant?: "hero" | "preview";
+}) {
+  const baseClass =
+    variant === "hero"
+      ? "aspect-[16/9] w-full border border-border/60 bg-background object-contain"
+      : "aspect-[4/3] w-full bg-background object-contain transition-transform duration-[1.2s] ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:scale-105";
+
+  if (project.mediaType === "video") {
+    return (
+      <video
+        src={project.media}
+        aria-label={project.title}
+        controls={variant === "hero"}
+        muted
+        loop
+        playsInline
+        preload="metadata"
+        className={baseClass}
+      />
+    );
+  }
+
+  return (
+    <img
+      src={project.media}
+      alt={project.title}
+      width={1280}
+      height={960}
+      loading={variant === "hero" ? "eager" : "lazy"}
+      className={baseClass}
+    />
+  );
+}
+
 export const Route = createFileRoute("/work/$slug")({
   loader: ({ params }): { project: Project } => {
     const project = projects.find((p) => p.slug === params.slug);
@@ -15,10 +54,10 @@ export const Route = createFileRoute("/work/$slug")({
   head: ({ loaderData }) => {
     if (!loaderData) {
       return {
-        meta: [{ title: "Project not found — EXTACYOFCRYPTO" }, { name: "robots", content: "noindex" }],
+        meta: [{ title: "Project not found — LEDUMBINY" }, { name: "robots", content: "noindex" }],
       };
     }
-    const t = `${loaderData.project.title} — EXTACYOFCRYPTO`;
+    const t = `${loaderData.project.title} — LEDUMBINY`;
     const d = loaderData.project.overview.slice(0, 155);
     return {
       meta: [
@@ -80,13 +119,7 @@ function ProjectPage() {
           transition={{ duration: 1.6, ease: [0.16, 1, 0.3, 1] }}
           className="mx-auto mt-14 max-w-6xl px-6 lg:px-10"
         >
-          <img
-            src={project.image}
-            alt={project.title}
-            width={1280}
-            height={960}
-            className="aspect-[16/9] w-full border border-border/60 object-cover"
-          />
+          <ProjectMedia project={project} variant="hero" />
         </motion.div>
 
         <div className="mx-auto mt-20 max-w-5xl px-6 lg:px-10">
@@ -142,14 +175,7 @@ function ProjectPage() {
                   params={{ slug: p.slug }}
                   className="group block overflow-hidden border border-border/60"
                 >
-                  <img
-                    src={p.image}
-                    alt={p.title}
-                    width={1280}
-                    height={960}
-                    loading="lazy"
-                    className="aspect-[4/3] w-full object-cover transition-transform duration-[1.2s] ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:scale-105"
-                  />
+                  <ProjectMedia project={p} />
                   <div className="p-5">
                     <h3 className="font-display text-xl font-light">{p.title}</h3>
                     <p className="mt-1 text-xs text-muted-foreground">{p.category}</p>

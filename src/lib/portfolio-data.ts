@@ -1,15 +1,14 @@
-import motionImg from "@/assets/work-motion.jpg";
-import videoImg from "@/assets/work-video.jpg";
-import graphicImg from "@/assets/work-graphic.jpg";
-import brandingImg from "@/assets/work-branding.jpg";
-import socialImg from "@/assets/work-social.jpg";
+import brandSting from "@/assets/work-brand-sting.mp4";
+import fashionSaleFlyer from "@/assets/work-fashion-sale-flyer.jpeg";
+import greatVaultFlyer from "@/assets/work-great-vault-flyer.jpeg";
+import motionClipOne from "@/assets/work-motion-01.mp4";
+import motionClipTwo from "@/assets/work-motion-02.mp4";
+import socialReel from "@/assets/work-social-reel.mp4";
+import videoEditOne from "@/assets/work-video-edit-01.mp4";
+import videoEditTwo from "@/assets/work-video-edit-02.mp4";
 
 export type Category =
-  | "Motion Design"
-  | "Video Editing"
-  | "Graphic Design"
-  | "Branding"
-  | "Social Media";
+  "Motion Design" | "Video Editing" | "Graphic Design" | "Branding" | "Social Media";
 
 export const categories: Category[] = [
   "Motion Design",
@@ -33,7 +32,8 @@ export type Project = {
   category: Category;
   year: string;
   client: string;
-  image: string;
+  media: string;
+  mediaType: "image" | "video";
   overview: string;
   objective: string;
   tools: string[];
@@ -44,114 +44,133 @@ export type Project = {
 
 export const projects: Project[] = [
   {
-    slug: "liquid-gold",
-    title: "Liquid Gold",
+    slug: "motion-promo-sequence",
+    title: "Motion Promo Sequence",
     category: "Motion Design",
-    year: "2025",
-    client: "AURUM Reserve",
-    image: motionImg,
+    year: "2026",
+    client: "Client campaign",
+    media: motionClipOne,
+    mediaType: "video",
     overview:
-      "A 45-second brand film built entirely from simulated metal, designed to introduce a private reserve product without ever showing the product itself.",
+      "A short motion-led promo built for quick attention, using pacing, transitions and graphic movement to make the offer feel immediate.",
     objective:
-      "Translate the idea of quiet wealth into movement — no hard cuts, no captions, only material and light doing the talking.",
-    tools: ["After Effects", "Blender", "Photoshop"],
-    role: "Concept, 3D art direction, simulation, compositing and final grade.",
+      "Turn a simple promo asset into something that feels active enough for feeds, stories and paid placements.",
+    tools: ["After Effects", "Premiere Pro", "Photoshop"],
+    role: "Motion design, pacing, graphic treatment and export.",
     outcome:
-      "Used as the launch anchor across three markets. Average watch-through of 84% on paid placements.",
-    testimonial: {
-      quote:
-        "It looked like something a studio ten times the size would deliver. The restraint is what sold it internally.",
-      author: "Marielle Vance",
-      role: "Brand Director, AURUM Reserve",
-    },
+      "Delivered as a concise promotional clip ready for social publishing and client review.",
   },
   {
-    slug: "night-shift",
-    title: "Night Shift",
+    slug: "kinetic-social-opener",
+    title: "Kinetic Social Opener",
+    category: "Motion Design",
+    year: "2026",
+    client: "Client campaign",
+    media: motionClipTwo,
+    mediaType: "video",
+    overview:
+      "A compact motion opener shaped for fast scroll environments where the first seconds need to carry the whole idea.",
+    objective:
+      "Create a polished moving asset with clear rhythm, clean framing and a strong visual entrance.",
+    tools: ["After Effects", "Premiere Pro"],
+    role: "Animation direction, edit timing and delivery.",
+    outcome: "Prepared as a reusable motion piece for campaign rollout.",
+  },
+  {
+    slug: "edited-campaign-cut",
+    title: "Edited Campaign Cut",
     category: "Video Editing",
-    year: "2025",
-    client: "Halcyon Films",
-    image: videoImg,
+    year: "2026",
+    client: "Client project",
+    media: videoEditOne,
+    mediaType: "video",
     overview:
-      "A short-form documentary cut from 14 hours of low-light footage, shaped into a six-minute piece about the people who keep a city running after midnight.",
+      "A short edited campaign clip built from source footage and arranged into a clean, publishable sequence.",
     objective:
-      "Find a rhythm that felt patient rather than punchy, and let silence carry as much weight as the dialogue.",
-    tools: ["Premiere Pro", "After Effects", "DaVinci Resolve"],
-    role: "Lead editor, sound design pass and colour grade supervision.",
-    outcome:
-      "Official selection at two regional festivals and the studio's most-watched release of the year.",
+      "Shape the clip so the message lands quickly while keeping the transitions and pacing smooth.",
+    tools: ["Premiere Pro", "After Effects"],
+    role: "Editing, sequencing, timing and export.",
+    outcome: "Finished as a lightweight web and social-ready video asset.",
   },
   {
-    slug: "type-specimen",
-    title: "Specimen No. 07",
+    slug: "short-form-edit",
+    title: "Short Form Edit",
+    category: "Video Editing",
+    year: "2026",
+    client: "Client project",
+    media: videoEditTwo,
+    mediaType: "video",
+    overview:
+      "A fast, concise edited piece made for digital delivery, with the timing tightened for viewer retention.",
+    objective:
+      "Keep the edit direct, polished and easy to understand within the first few seconds.",
+    tools: ["Premiere Pro", "After Effects"],
+    role: "Cutdown editing, rhythm, visual clean-up and export.",
+    outcome: "Delivered as a ready-to-post campaign edit.",
+  },
+  {
+    slug: "great-vault-premium-escape",
+    title: "Great Vault Premium Escape",
     category: "Graphic Design",
-    year: "2024",
-    client: "Foundry Nine",
-    image: graphicImg,
+    year: "2026",
+    client: "Great Vault Living",
+    media: greatVaultFlyer,
+    mediaType: "image",
     overview:
-      "A printed and digital type specimen for a display serif, built around a strict two-column grid and heavy negative space.",
+      "A promotional flyer for a premium Port Harcourt apartment offer, combining lifestyle imagery, feature hierarchy and direct booking information.",
     objective:
-      "Make a typeface feel collectible — something designers would keep on a shelf rather than scroll past.",
-    tools: ["Illustrator", "Photoshop", "Figma"],
-    role: "Editorial layout, cover system and production artwork.",
-    outcome: "First print run of 500 copies sold out in eleven days.",
-    testimonial: {
-      quote: "Every spread had a reason to exist. That is rarer than it should be.",
-      author: "Idris Kaye",
-      role: "Founder, Foundry Nine",
-    },
+      "Make the accommodation feel comfortable and high-value while keeping the booking CTA impossible to miss.",
+    tools: ["Photoshop", "Illustrator"],
+    role: "Flyer design, layout, typography and production export.",
+    outcome: "Prepared as a clear promotional creative for online sharing.",
   },
   {
-    slug: "obsidian-identity",
-    title: "Obsidian",
+    slug: "tonye-preye-fashion-sale",
+    title: "Tonye & Preye Fashion Sale",
+    category: "Graphic Design",
+    year: "2026",
+    client: "Tonye & Preye Fashion Home",
+    media: fashionSaleFlyer,
+    mediaType: "image",
+    overview:
+      "A retail fashion sale poster built around product cutouts, offer hierarchy and bold seasonal campaign energy.",
+    objective:
+      "Present multiple product categories while keeping the sale date, contact details and brand name readable.",
+    tools: ["Photoshop", "Illustrator"],
+    role: "Poster design, product composition, typography and export.",
+    outcome: "Delivered as a finished social and print-ready campaign flyer.",
+  },
+  {
+    slug: "brand-sting",
+    title: "Brand Sting",
     category: "Branding",
-    year: "2024",
-    client: "Obsidian Atelier",
-    image: brandingImg,
+    year: "2026",
+    client: "Client brand asset",
+    media: brandSting,
+    mediaType: "video",
     overview:
-      "A full identity system for a made-to-order leather atelier — monogram, stationery, packaging and a motion signature for film endings.",
+      "A compact branded motion piece designed to give a campaign or page a stronger visual signature.",
     objective:
-      "Build a mark that survives being embossed at 8mm and animated at 4K without losing character.",
-    tools: ["Illustrator", "Blender", "After Effects"],
-    role: "Identity design, packaging art direction and motion signature.",
-    outcome:
-      "Rolled out across retail, packaging and film. Unprompted brand recall doubled in post-launch surveys.",
+      "Create a short, memorable brand moment that can sit before, after or inside campaign content.",
+    tools: ["After Effects", "Premiere Pro"],
+    role: "Brand motion treatment, timing and export.",
+    outcome: "Prepared as a reusable branded video asset.",
   },
   {
-    slug: "signal-campaign",
-    title: "Signal",
+    slug: "social-promo-reel",
+    title: "Social Promo Reel",
     category: "Social Media",
-    year: "2025",
-    client: "Terra Studio",
-    image: socialImg,
+    year: "2026",
+    client: "Client social campaign",
+    media: socialReel,
+    mediaType: "video",
     overview:
-      "A 30-asset vertical campaign engineered so each frame works standalone and as part of a continuous scroll narrative.",
+      "A short promotional reel formatted for fast-moving social channels and lightweight campaign distribution.",
     objective:
-      "Stop the thumb in under one second while keeping the brand's calm, premium register intact.",
-    tools: ["After Effects", "Premiere Pro", "Figma"],
-    role: "Campaign art direction, animation and delivery across formats.",
-    outcome: "3.1M organic impressions and a 210% lift in profile visits over six weeks.",
-    testimonial: {
-      quote:
-        "Premium and performance usually pull in opposite directions. This campaign did both.",
-      author: "Noor Haddad",
-      role: "Head of Growth, Terra Studio",
-    },
-  },
-  {
-    slug: "kinetic-titles",
-    title: "Kinetic Titles",
-    category: "Motion Design",
-    year: "2024",
-    client: "Meridian Conference",
-    image: motionImg,
-    overview:
-      "An opening title sequence and modular lower-third system for a two-day design conference.",
-    objective:
-      "Give a live event a cinematic spine that could be reassembled by the venue team without breaking.",
-    tools: ["After Effects", "Illustrator"],
-    role: "Sequence design, animation and template hand-off.",
-    outcome: "Reused across two subsequent editions with zero design supervision needed.",
+      "Hold attention with concise pacing while keeping the message simple enough for quick feed viewing.",
+    tools: ["Premiere Pro", "After Effects"],
+    role: "Social edit, motion polish and delivery formatting.",
+    outcome: "Exported as a compact social-ready promo clip.",
   },
 ];
 
@@ -254,8 +273,7 @@ export const testimonials = [
     role: "Founder, Foundry Nine",
   },
   {
-    quote:
-      "The motion signature he built is now the most recognisable part of our brand.",
+    quote: "The motion signature he built is now the most recognisable part of our brand.",
     author: "Lena Ostrom",
     role: "Creative Lead, Obsidian Atelier",
   },

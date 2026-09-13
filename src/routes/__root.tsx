@@ -77,13 +77,13 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "EXTACYOFCRYPTO — Motion Designer & Video Editor" },
+      { title: "LEDUMBINY — Motion Designer & Video Editor" },
       {
         name: "description",
         content:
-          "Portfolio of EXTACYOFCRYPTO: cinematic motion design, video editing and graphic design.",
+          "Portfolio of LEDUMBINY: cinematic motion design, video editing and graphic design.",
       },
-      { name: "author", content: "EXTACYOFCRYPTO" },
+      { name: "author", content: "LEDUMBINY" },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
     ],
@@ -98,7 +98,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
         rel: "stylesheet",
         href: "https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500&family=Manrope:wght@300;400;500;600&display=swap",
       },
-      { rel: "icon", href: "/favicon.ico", type: "image/x-icon" },
+      { rel: "icon", href: "/favicon.svg", type: "image/svg+xml" },
     ],
   }),
 

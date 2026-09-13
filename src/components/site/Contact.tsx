@@ -41,18 +41,18 @@ export function Contact() {
                 <span className="text-gold-foil animate-foil">worth watching.</span>
               </h2>
               <p className="mt-7 max-w-md leading-relaxed text-muted-foreground">
-                Taking on a limited number of projects. Tell me about the brand, the
-                deadline and the idea — I'll reply within two working days.
+                Taking on a limited number of projects. Tell me about the brand, the deadline and
+                the idea — I'll reply within two working days.
               </p>
             </Reveal>
 
             <Reveal delay={0.12}>
               <div className="mt-12">
                 <a
-                  href="mailto:hello@extacyofcrypto.com"
+                  href="mailto:hello@ledumbiny.com"
                   className="font-display text-xl font-light text-foreground/90 transition-colors hover:text-gold"
                 >
-                  hello@extacyofcrypto.com
+                  hello@ledumbiny.com
                 </a>
                 <div className="mt-8 flex flex-wrap gap-x-8 gap-y-3">
                   {socials.map((s) => (
@@ -171,7 +171,7 @@ export function Contact() {
         </div>
 
         <div className="mt-24 flex flex-col items-center justify-between gap-4 border-t border-border/50 pt-8 text-[0.62rem] tracking-[0.2em] text-muted-foreground uppercase sm:flex-row">
-          <span>© {new Date().getFullYear()} EXTACYOFCRYPTO</span>
+          <span>© {new Date().getFullYear()} LEDUMBINY</span>
           <span>Motion · Film · Design</span>
         </div>
       </div>

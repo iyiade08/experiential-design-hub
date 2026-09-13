@@ -1,6 +1,6 @@
 import { motion, useInView, useMotionValue, useSpring, useTransform } from "motion/react";
 import { useEffect, useRef } from "react";
-import portrait from "@/assets/portrait.jpg";
+import portrait from "@/assets/ledumbiny-about.jpeg";
 import { stats } from "@/lib/portfolio-data";
 import { Reveal } from "./Reveal";
 
@@ -32,7 +32,7 @@ export function About() {
             <div className="relative overflow-hidden">
               <img
                 src={portrait}
-                alt="Portrait of EXTACYOFCRYPTO in the studio"
+                alt="Portrait illustration of LEDUMBINY creating artwork"
                 width={1024}
                 height={1280}
                 loading="lazy"
@@ -55,16 +55,11 @@ export function About() {
             </h2>
             <div className="mt-7 space-y-5 text-base leading-relaxed text-muted-foreground">
               <p>
-                I'm a motion designer, editor and graphic designer working at the
-                intersection of film and brand. Most of my work lives in the seconds
-                people usually skip — so I spend my time making those seconds worth
-                staying for.
-              </p>
-              <p>
-                I work with a small number of clients each year, which means every
-                project gets full attention: the concept, the frame, the timing, the
-                grade and the hand-off. No templates, no filler, no motion for the sake
-                of motion.
+                I design and animate at the intersection of web3 and brand storytelling — work that
+                requires actually understanding the space, not just executing a brief. I handle
+                everything myself, from concept to final export, across both static and motion. That
+                means no learning curve on your dime, and no freelancers to coordinate — just one
+                person accountable for the whole project.
               </p>
             </div>
           </Reveal>

@@ -31,7 +31,7 @@ export function Nav() {
       <div className="mx-auto grid max-w-7xl grid-cols-[minmax(0,1fr)_auto] items-center gap-4 px-6 py-5 lg:px-10">
         <Link to="/" className="min-w-0">
           <span className="truncate font-display text-lg tracking-[0.28em] text-gold-foil">
-            EXTACYOFCRYPTO
+            LEDUMBINY
           </span>
         </Link>
 

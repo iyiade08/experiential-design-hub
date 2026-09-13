@@ -5,6 +5,37 @@ import { ArrowUpRight } from "lucide-react";
 import { categories, categoryAccent, projects, type Category } from "@/lib/portfolio-data";
 import { Reveal, SectionHeading } from "./Reveal";
 
+function ProjectMedia({ project }: { project: (typeof projects)[number] }) {
+  const className =
+    "h-full w-full bg-background object-contain transition-transform duration-[1.4s] ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:scale-[1.04]";
+
+  if (project.mediaType === "video") {
+    return (
+      <video
+        src={project.media}
+        aria-label={project.title}
+        muted
+        loop
+        playsInline
+        autoPlay
+        preload="metadata"
+        className={`${className} pointer-events-none`}
+      />
+    );
+  }
+
+  return (
+    <img
+      src={project.media}
+      alt={project.title}
+      width={1280}
+      height={960}
+      loading="lazy"
+      className={className}
+    />
+  );
+}
+
 function TiltCard({ project }: { project: (typeof projects)[number] }) {
   const [tilt, setTilt] = useState({ x: 0, y: 0 });
 
@@ -36,14 +67,7 @@ function TiltCard({ project }: { project: (typeof projects)[number] }) {
         className="block overflow-hidden border border-border/60 bg-card"
       >
         <div className="relative aspect-[4/3] overflow-hidden">
-          <img
-            src={project.image}
-            alt={project.title}
-            width={1280}
-            height={960}
-            loading="lazy"
-            className="h-full w-full object-cover transition-transform duration-[1.4s] ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:scale-[1.08]"
-          />
+          <ProjectMedia project={project} />
           <div
             className="absolute inset-0 opacity-70 transition-opacity duration-700 group-hover:opacity-40"
             style={{ background: "var(--gradient-veil)" }}
