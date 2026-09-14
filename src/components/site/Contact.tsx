@@ -7,7 +7,7 @@ const socials = [
   { label: "Instagram", href: "https://instagram.com" },
   { label: "Behance", href: "https://behance.net" },
   { label: "YouTube", href: "https://youtube.com" },
-  { label: "X", href: "https://x.com" },
+  { label: "X", href: "https://x.com/Ledumbiny" },
 ];
 
 export function Contact() {
@@ -52,7 +52,7 @@ export function Contact() {
                   href="mailto:hello@ledumbiny.com"
                   className="font-display text-xl font-light text-foreground/90 transition-colors hover:text-gold"
                 >
-                  hello@ledumbiny.com
+                  · ledumbiny@gmail.com
                 </a>
                 <div className="mt-8 flex flex-wrap gap-x-8 gap-y-3">
                   {socials.map((s) => (
